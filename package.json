@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://dimalitvinenko.github.io/goit-Js-hw-09-gallery",
+  "homepage": "https://dimalitvinenko.github.io/goit-Js-hw-09-homework",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-Js-hw-09-gallery/"
+    "build": "parcel build src/*.html --public-url /goit-Js-hw-09-homework/"
   },
   "repository": {
     "type": "git",
