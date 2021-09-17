@@ -1,5 +1,4 @@
-// - Достать ссылки на элементы ссылки 
-
+// - Достать ссылки на элементы 
 const refs = {
     startBtn: document.querySelector('button[data-start]'),
     stopBtn: document.querySelector('button[data-stop]'),
@@ -10,23 +9,17 @@ const { startBtn, stopBtn, body, resetBtn } = refs;
 
 let intervalId = null;
 
-// Генератор интервала
-// const randomIntegerFromInterval = (min, max) => {
-//     return Math.floor(Math.random() * (max - min + 1) + min);
-// };
-
-
-// Генерации случайного цвета
+// - Генерации случайного цвета
 const getRandomHexColor = () => {
     return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 };
 
-// Вешает рандомный цвет на body
+// - Вешает рандомный цвет на body
 const getBodyColor = () => {
     return body.style.backgroundColor = getRandomHexColor();
 }; 
 
-// Сброс инлайн цвета
+// - Сброс инлайн цвета
 const resetColorHandler = ({ target }) => {
     if (target.dataset.reset === undefined) {
         return;
@@ -35,7 +28,7 @@ const resetColorHandler = ({ target }) => {
     return body.style.backgroundColor = "";
 };
 
-// Обработчик кнопки Старт
+// - Обработчик кнопки Старт
 const startBtnHandler = ({ target, currentTarget }) => {
     if (target.dataset.start === undefined) {
         return;
@@ -52,7 +45,7 @@ const startBtnHandler = ({ target, currentTarget }) => {
     body.addEventListener('click', resetColorHandler);
 };
 
-// Обработчик кнопки Стоп
+// - Обработчик кнопки Стоп
 const stopBtnHandler = ({ target, currentTarget }) => {
     if (target.dataset.stop === undefined) {
         return;
@@ -70,6 +63,7 @@ const stopBtnHandler = ({ target, currentTarget }) => {
     // body.addEventListener('click', resetColorHandler);
 };
 
+// - Вызовы обработчиков слушателей событий 
 body.addEventListener('click', startBtnHandler);
 body.addEventListener('click', stopBtnHandler);
 
