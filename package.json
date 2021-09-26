@@ -1,7 +1,7 @@
 {
-  "name": "parcel-project-template",
+  "name": "goit-js-hw-09-switcher",
   "version": "1.1.0",
-  "description": "",
+  "description": "swither and timer",
   "main": "index.js",
   "homepage": "https://dimalitvinenko.github.io/goit-Js-hw-09-switcher",
   "scripts": {
@@ -10,13 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/dimalitvinenko/goit-Js-hw-09-switcher.git"
   },
   "keywords": [],
   "author": "DimaLy <dimaly.too@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/dimalitvinenko/goit-Js-hw-09-switcher/issues"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",

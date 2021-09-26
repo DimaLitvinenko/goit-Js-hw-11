@@ -1,70 +1,82 @@
-// - Достать ссылки на элементы 
-const refs = {
-    startBtn: document.querySelector('button[data-start]'),
-    stopBtn: document.querySelector('button[data-stop]'),
-    resetBtn: document.querySelector('button[data-reset]'),
-    body: document.querySelector('body'),
-};
+// Подключаем стили
+import '../sass/_common.scss';
+import '../sass/_switcher.scss';
+import refs from './refs.js';
+
 const { startBtn, stopBtn, body, resetBtn } = refs;
 
 let intervalId = null;
+
 
 // - Генерации случайного цвета
 const getRandomHexColor = () => {
     return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 };
 
+
 // - Вешает рандомный цвет на body
 const getBodyColor = () => {
     return body.style.backgroundColor = getRandomHexColor();
 }; 
 
+
 // - Сброс инлайн цвета
-const resetColorHandler = ({ target }) => {
+const resetBtnColorHandler = ({ target }) => {
     if (target.dataset.reset === undefined) {
         return;
     };
     console.log(target);
-    return body.style.backgroundColor = "";
-};
 
-// - Обработчик кнопки Старт
-const startBtnHandler = ({ target, currentTarget }) => {
-    if (target.dataset.start === undefined) {
-        return;
+    if(!body.classList.contains('body_switcher')) {
+        body.classList.add('body_switcher');
     };
 
-    console.log(target);
-    console.log(currentTarget);
+    resetBtn.classList.remove('is_active');
 
-    if (target.disabled === false) {
-        target.disabled = true;
-        intervalId = setInterval(getBodyColor, 1000);
-    };   
-    
-    body.addEventListener('click', resetColorHandler);
+    return body.style.backgroundColor = ""; 
 };
 
+
 // - Обработчик кнопки Стоп
-const stopBtnHandler = ({ target, currentTarget }) => {
+const stopBtnHandler = ({ target }) => {
     if (target.dataset.stop === undefined) {
         return;
     };
-
     console.log(target);
-    console.log(currentTarget);
+
+    if (target.disabled === false) {
+        startBtn.disabled = false;
+        
+        // resetBtn.disabled = false;
+        resetBtn.classList.add('is_active');
+
+        clearInterval(intervalId);
+    };   
+    
+    resetBtn.addEventListener('click', resetBtnColorHandler);
+};
+
+
+// - Обработчик кнопки Старт
+const startBtnHandler = ({ target }) => {
+    if (target.dataset.start === undefined) {
+        return;
+    };
+    console.log(target);
 
     if (target.disabled === false) {
         
-        startBtn.disabled = false;
-        clearInterval(intervalId);
+        target.disabled = true;
+        
+        intervalId = setInterval(getBodyColor, 900);
+        body.classList.remove('body_switcher');
     };   
-
-    // body.addEventListener('click', resetColorHandler);
+    
+    
+    stopBtn.addEventListener('click', stopBtnHandler);
 };
 
 // - Вызовы обработчиков слушателей событий 
-body.addEventListener('click', startBtnHandler);
-body.addEventListener('click', stopBtnHandler);
+startBtn.addEventListener('click', startBtnHandler);
 
-
+resetBtn.addEventListener('click', resetBtnColorHandler);
