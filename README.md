@@ -1,4 +1,4 @@
-# Parcel boilerplate
+<h1 align="center">Parcel boilerplate</h1>
 
 ## Скрытые файлы
 
