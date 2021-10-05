@@ -1,22 +1,22 @@
 {
-  "name": "goit-js-hw-09-switcher",
+  "name": "goit-js-hw-11",
   "version": "1.1.0",
   "description": "swither and timer",
   "main": "index.js",
-  "homepage": "https://dimalitvinenko.github.io/goit-Js-hw-09-switcher",
+  "homepage": "https://dimalitvinenko.github.io/goit-Js-hw-11",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-Js-hw-09-switcher/"
+    "build": "parcel build src/*.html --public-url /goit-Js-hw-11/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dimalitvinenko/goit-Js-hw-09-switcher.git"
+    "url": "git+https://github.com/dimalitvinenko/goit-Js-hw-11.git"
   },
   "keywords": [],
   "author": "DimaLy <dimaly.too@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dimalitvinenko/goit-Js-hw-09-switcher/issues"
+    "url": "https://github.com/dimalitvinenko/goit-Js-hw-11/issues"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
