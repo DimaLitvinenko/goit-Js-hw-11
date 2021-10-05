@@ -69,6 +69,7 @@ const startBtnHandler = ({ target }) => {
         target.disabled = true;
         
         intervalId = setInterval(getBodyColor, 900);
+        resetBtn.classList.remove('is_active');
         body.classList.remove('body_switcher');
     };   
     
