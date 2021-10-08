@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"cCyD":[function(require,module,exports) {
 "use strict";function s(s,a){Math.random()}require("../sass/main.scss");
 },{"../sass/main.scss":"clu1"}]},{},["cCyD"], null)
-//# sourceMappingURL=/goit-Js-hw-11/02-promises.9e28148c.js.map
+//# sourceMappingURL=/goit-Js-hw-11/02-promises.bf31dc74.js.map

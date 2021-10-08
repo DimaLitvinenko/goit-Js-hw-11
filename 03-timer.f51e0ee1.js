@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"CfFX":[function(require,module,exports) {
 "use strict";require("../sass/main.scss");
 },{"../sass/main.scss":"clu1"}]},{},["CfFX"], null)
-//# sourceMappingURL=/goit-Js-hw-11/03-timer.3f80a0ac.js.map
+//# sourceMappingURL=/goit-Js-hw-11/03-timer.f51e0ee1.js.map
