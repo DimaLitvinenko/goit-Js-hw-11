@@ -22,4 +22,25 @@ img {
 
 .return__link {
   font-weight: bold;
+  color: rgba(5, 5, 5, 0.6);
+  text-decoration: none;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::after {
+    content: ' 🚪';
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover, &:focus {
+    color: rgba(5, 5, 5, 1);
+    transform: scale(1.05);
+
+    &::after {
+      opacity: 1;
+    }
+  }
 }

@@ -4,7 +4,7 @@ import '../sass/_switcher.scss';
 import refs from './refs.js';
 
 const { startBtn, stopBtn, body, resetBtn } = refs;
-
+const INTERVAL_TIME = 900;
 let intervalId = null;
 
 
@@ -30,7 +30,7 @@ const resetBtnColorHandler = ({ target }) => {
     if(!body.classList.contains('body_switcher')) {
         body.classList.add('body_switcher');
     };
-
+    
     resetBtn.classList.remove('is_active');
 
     return body.style.backgroundColor = ""; 
@@ -65,14 +65,12 @@ const startBtnHandler = ({ target }) => {
     console.log(target);
 
     if (target.disabled === false) {
-        
         target.disabled = true;
         
-        intervalId = setInterval(getBodyColor, 900);
+        intervalId = setInterval(getBodyColor, INTERVAL_TIME);
         resetBtn.classList.remove('is_active');
         body.classList.remove('body_switcher');
     };   
-    
     
     stopBtn.addEventListener('click', stopBtnHandler);
 };
