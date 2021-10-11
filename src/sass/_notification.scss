@@ -1,38 +1,41 @@
 .alert {
     position: fixed;
-    top: 10px;
-    left: 43.5%;
+    bottom: 120px;
+    right: 100px;
+
     margin: 0;
+
     background-color: #fff;
     color: #2a2a2a;
     border: 1px solid #2a2a2a;
     border-radius: 3px;
-    padding: 24px;
+    padding: 28px;
     user-select: none;
     cursor: pointer;
-    
-    transform: translateY(-100%);
+
+    font-size: 28px;
+    font-weight: bold;
+    transform: translateX(100%);
     visibility: hidden;
     opacity: 0;
+
     transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1),
     transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 300ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    font-size: 24px;
-    font-weight: bold;
 }
   
 .alert.success {
     border: 1px solid darkmagenta;
-    background-color: #c51ad1;
-    box-shadow: 0.7px 2.8px 2.2px green,
-    0.7px 4px 4px orange, 
-    0.7px 6px 6px red;
+    background-color: #c51ad120;
     color: rgba(78, 32, 78, 0.9);
+
+    box-shadow: 0.7px 3px 3px cadetblue,
+    0.7px 4px 4px orangered, 
+    0.7px 6px 6px green;
 }
   
 .alert.is_active {
-    transform: translateY(0);
+    transform: translateX(0%);
     visibility: visible;
     opacity: 1;
 }

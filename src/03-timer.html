@@ -5,32 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Countdown timer</title>
   </head>
-  <body>
-    <p><a href="index.html">Go back</a></p>
+  <body class="body_timer">
+    <p>
+      <a class="return__link" href="index.html">Go back</a>
+    </p>
 
-    <input type="date" id="date-selector" />
-    <button type="button" data-start>Start</button>
-    <button type="button" data-stop>Stop</button>
+    <!-- <div class="container">
+      <input type="date" id="date-selector" />  
+      <button type="button" data-action="start">Start</button>
+      <button type="button" data-action="stop">Stop</button>
+    </div> -->
+    
+    <p class="desc">Time to my Birthday</p>
 
-    <div class="timer">
+    <div class="timer" id="timer-1">
       <div class="field">
-        <span class="value" data-days>00</span>
+        <span class="value" data-value="days">0</span>
         <span class="label">Days</span>
       </div>
+      
       <div class="field">
-        <span class="value" data-hours>00</span>
+        <span class="value" data-value="hours">0</span>
         <span class="label">Hours</span>
       </div>
+      
       <div class="field">
-        <span class="value" data-minutes>00</span>
+        <span class="value" data-value="mins">0</span>
         <span class="label">Minutes</span>
       </div>
+      
       <div class="field">
-        <span class="value" data-seconds>00</span>
+        <span class="value" data-value="secs">0</span>
         <span class="label">Seconds</span>
       </div>
     </div>
 
-    <script src="js/03-timer.js"></script>
+    <script src="./js/03-timer.js"></script>
   </body>
 </html>

@@ -1,5 +1,7 @@
 // Подключаем стили
-import '../sass/main.scss';
+import '../sass/_common.scss';
+import '../sass/_promisification.scss';
+
 
 function createPromise(position, delay) {
   const shouldResolve = Math.random() > 0.3;
@@ -8,4 +10,4 @@ function createPromise(position, delay) {
   } else {
     // Reject
   }
-}
+};
