@@ -2,7 +2,7 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 
 },{}],"Ch4o":[function(require,module,exports) {
 
-},{}],"L2Sh":[function(require,module,exports) {
-"use strict";function s(s,i){Math.random()}require("../sass/_common.scss"),require("../sass/_promisification.scss");
-},{"../sass/_common.scss":"Ch4o","../sass/_promisification.scss":"Ch4o"}]},{},["L2Sh"], null)
-//# sourceMappingURL=/goit-Js-hw-11/02-promisification.cc280cb5.js.map
+},{}],"LiEu":[function(require,module,exports) {
+"use strict";require("../sass/_common.scss"),require("../sass/_promisification.scss");const t=(t,s)=>Math.floor(Math.random()*(s-t+1)+t),s=s=>{const a=t(200,500);return new Promise((t,e)=>{setTimeout(()=>{Math.random()>.3?t(n({id:s.id,time:a})):e(o(s.id))},a)})},n=({id:t,time:s})=>{console.log(`Transaction ${t} processed in ${s}ms`)},o=t=>{console.warn(`Error processing transaction ${t}. Please try again later.`)};s({id:70,amount:150}).then(n).catch(o),s({id:71,amount:230}).then(n).catch(o),s({id:72,amount:75}).then(n).catch(o),s({id:73,amount:100}).then(n).catch(o);
+},{"../sass/_common.scss":"lbOu","../sass/_promisification.scss":"Ch4o"}]},{},["LiEu"], null)
+//# sourceMappingURL=/goit-Js-hw-11/task-3.7aec562b.js.map
