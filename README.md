@@ -1,4 +1,4 @@
-<h1 align="center">goit-Js-hw-11-ColorSwitcher-Promisification-CountdownTimer</h1>
+<h1 align="center">HomeWork-11-ColorSwitcher-Promisification-CountdownTimer</h1>
 
 <h2 align="center">Parcel boilerplate</h2>
 
