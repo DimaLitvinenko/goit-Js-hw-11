@@ -2,7 +2,7 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 
 },{}],"Ch4o":[function(require,module,exports) {
 
-},{}],"EEVQ":[function(require,module,exports) {
-"use strict";require("../sass/_common.scss"),require("../sass/_promisification.scss");const e=[{name:"Mango",active:!0},{name:"Poly",active:!1},{name:"Ajax",active:!0},{name:"Lux",active:!1}],s=(e,s)=>{const a=e.map(e=>e.name===s?{...e,active:!e.active}:e);return console.log(Promise.resolve(a)),Promise.resolve(a)},a=e=>console.table(e);s(e,"Mango").then(a),s(e,"Lux").then(a);
-},{"../sass/_common.scss":"lbOu","../sass/_promisification.scss":"Ch4o"}]},{},["EEVQ"], null)
-//# sourceMappingURL=/goit-Js-hw-11/task-2.25a0edd4.js.map
+},{}],"LLK9":[function(require,module,exports) {
+"use strict";require("../sass/_common.scss"),require("../sass/_promisification.scss");const e=e=>new Promise(o=>{setTimeout(()=>{o(e)},e)}),o=e=>console.log(`Resolved after ${e}ms`);e(2e3).then(o),e(1e3).then(o),e(1500).then(o);const s=new Promise((e,o)=>{const s=Math.random()>.5;setTimeout(()=>{s&&e("Промис выполнился успешно, с результатом (исполнен, fulfilled)"),o("Промис выполнился с ошибкой (отклонён, rejected)")},1e3)});function n(e){console.log("onFulfilled -> onFulfilled"),console.log(`✅ ${e}`)}function l(e){console.log("onRejected -> onRejected"),console.log(`❌ ${e}`)}s.then(n).then(e=>(console.log(e),10)).then(e=>{console.log(e)}).catch(l).finally(()=>console.log("Я буду выполнен в любом случае"));
+},{"../sass/_common.scss":"lbOu","../sass/_promisification.scss":"Ch4o"}]},{},["LLK9"], null)
+//# sourceMappingURL=/goit-Js-hw-11/task-1.8f898a60.js.map
