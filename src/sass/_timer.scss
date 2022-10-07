@@ -44,15 +44,14 @@
   font-weight: 700;
   line-height: 1.6;
   font-style: italic;
-  color: rgba(187, 140, 20, 0.851);
+  color: rgba(73, 187, 20, 0.851);
   margin: 0 auto;
   
-  text-shadow: 0 2.8px 2.2px green, 
-  0 6.7px 6px blue, 
-  0 12.5px 12px red,
-  0 22.3px 17.9px purple, 
-  0 28.8px 28px orange, 
-  0 80px 33px teal;
+  text-shadow: 0 5.8px 5.2px green, 
+  0 8.7px 15.3px blue, 
+  0 12.5px 17px red, 
+  0 22.3px 23.9px orange, 
+  0 31.8px 33.4px purple;
 }
 
 .field {
@@ -64,29 +63,33 @@
   min-height: 100px;
   padding: 20px 55px;
   
+  cursor: pointer;
   background-color: #303132;
   border-top-left-radius: 53px;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 100px;
   border-bottom-left-radius: 100px;
 
-  box-shadow: 0 2.8px 2.2px green, 
-  0 6.7px 5.3px blue, 
-  0 12.5px 10px red,
-  0 22.3px 17.9px purple, 
-  0 41.8px 33.4px orange, 
-  0 100px 80px teal;
+  box-shadow: 0 5.8px 5.2px green, 
+  0 8.7px 15.3px blue, 
+  0 12.5px 17px red, 
+  0 22.3px 23.9px orange, 
+  0 41.8px 33.4px purple,
+  0 96px 80px teal;
 
   &:not(:last-child) {
     margin-right: 18px;
   }
+  // &:hover {
+ 
+  // }   
 }
 
 .value {
   font-size: 44px;
   line-height: 1.2;
 
-  color: rgb(172, 162, 58);
+  color: rgb(52, 249, 8);
 }
 
 .label {
@@ -96,31 +99,31 @@
   font-size: 12px;
   line-height: 1.2;
 
-  color: rgba(128, 128, 0, 0.892);
+  color: rgba(52, 249, 8, 0.7);
 }
 
 
 // NEON TEXT - DECORATION
 .neonText {
-  animation: flicker 2000ms infinite alternate;
-  color: rgba(172, 162, 58, 1);
-  color: rgb(199, 187, 78);
+  animation: flicker 1000ms infinite alternate;
+  color: rgba(58, 212, 50, 0.64);
+  color: rgba(58, 212, 50, 0.82);
 }
 
 /* Flickering animation */
 @keyframes flicker {
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
     text-shadow:
-    0 0 4px khaki,
-    0 0 11px khaki,
-    0 0 19px khaki,
-    0 0 40px rgb(199, 187, 78),
-    0 0 80px rgb(199, 187, 78),
-    0 0 90px rgb(199, 187, 78),
-    0 0 100px rgb(199, 187, 78),
-    0 0 150px rgb(199, 187, 78);
+    0 0 4px rgb(6, 210, 6),
+    0 0 11px rgb(6, 210, 6),
+    0 0 19px rgb(6, 210, 6),
+    0 0 40px rgb(84, 199, 78),
+    0 0 80px rgb(84, 199, 78),
+    0 0 90px rgb(84, 199, 78),
+    0 0 100px rgb(84, 199, 78),
+    0 0 150px rgb(84, 199, 78);
   }
-  20%, 24%, 55% {        
+  20%, 23%, 55% {        
       text-shadow: none;
   }    
 }
