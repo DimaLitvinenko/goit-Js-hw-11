@@ -2,7 +2,7 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 
 },{}],"Ch4o":[function(require,module,exports) {
 
-},{}],"LLK9":[function(require,module,exports) {
-"use strict";require("../sass/_common.scss"),require("../sass/_promisification.scss");const e=e=>new Promise(o=>{setTimeout(()=>{o(e)},e)}),o=e=>console.log(`Resolved after ${e}ms`);e(2e3).then(o),e(1e3).then(o),e(1500).then(o);const s=new Promise((e,o)=>{const s=Math.random()>.5;setTimeout(()=>{s&&e("Промис выполнился успешно, с результатом (исполнен, fulfilled)"),o("Промис выполнился с ошибкой (отклонён, rejected)")},1e3)});function n(e){console.log("onFulfilled -> onFulfilled"),console.log(`✅ ${e}`)}function l(e){console.log("onRejected -> onRejected"),console.log(`❌ ${e}`)}s.then(n).then(e=>(console.log(e),10)).then(e=>{console.log(e)}).catch(l).finally(()=>console.log("Я буду выполнен в любом случае"));
-},{"../sass/_common.scss":"lbOu","../sass/_promisification.scss":"Ch4o"}]},{},["LLK9"], null)
-//# sourceMappingURL=/goit-Js-hw-11/task-1.8f898a60.js.map
+},{}],"L2Sh":[function(require,module,exports) {
+"use strict";require("../sass/_common.scss"),require("../sass/_promisification.scss");
+},{"../sass/_common.scss":"lbOu","../sass/_promisification.scss":"Ch4o"}]},{},["L2Sh"], null)
+//# sourceMappingURL=/goit-Js-hw-11/02-promisification.4bced763.js.map
