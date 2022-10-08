@@ -1,8 +1,8 @@
 .alert {
     position: fixed;
-    bottom: 120px;
-    right: 100px;
-
+    bottom: 60px;
+    right: 50px;
+    // max-height: 300px;
     margin: 0;
 
     background-color: #fff;
@@ -13,7 +13,7 @@
     user-select: none;
     cursor: pointer;
 
-    font-size: 28px;
+    // font-size: 28px;
     font-weight: bold;
     transform: translateX(100%);
     visibility: hidden;
